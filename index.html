@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michał Auto Serwis — Profesjonalny Mechanik Samochodowy</title>
+  <meta name="description"
+    content="Michał Auto Serwis — nowoczesny i rzetelny warsztat samochodowy. Przeglądy, naprawy bieżące, diagnostyka komputerowa, klimatyzacja i wulkanizacja. Sprawdź cennik i umów wizytę.">
+
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Sticky Top Header -->
+  <header class="site-header" id="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top">
+        <span class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+            </path>
+          </svg>
+        </span>
+        <span class="logo-text">Michał <span class="accent">Auto Serwis</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Nawigacja główna">
+        <a href="#uslugi">Usługi</a>
+        <a href="#kalkulator">Wycena</a>
+        <a href="#dlaczego-my">Dlaczego my</a>
+        <a href="#o-mnie">O warsztacie</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="header-phone" href="tel:+48600000000">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span>600 000 000</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Framed Video Showcase Hero Section -->
+    <section class="hero-framed-section wrap">
+
+      <div class="video-frame-container">
+        <div class="video-frame-card">
+          <video id="heroVideo" class="framed-hero-video" autoplay loop muted playsinline poster="images/dodge_1.jpg"
+            aria-hidden="true">
+            <source src="videos/dodge_vid.mp4" type="video/mp4">
+          </video>
+          <div class="framed-video-glow"></div>
+        </div>
+      </div>
+
+      <div class="wrap hero-content">
+        <!-- Hero Top Text Content -->
+        <div class="hero-text-block text-center">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Warsztat otwarty · Pon - Pt 8:00 - 17:00</span>
+          </div>
+
+          <h1 class="header-text-1">Naprawiamy auta rzetelnie. <br><span class="gradient-text">Bez przykrych
+              niespodzianek.</span></h1>
+
+          <p class="hero-lead text-center-lead">
+            Przeglądy, diagnostyka komputerowa i naprawy bieżące w Twojej okolicy. Przejrzyste ustalenia, uczciwe ceny i
+            brak wymiany części na ślepo.
+          </p>
+
+          <div class="hero-trust-pills hero-pills-center">
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>15+ lat doświadczenia</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Wycena przed naprawą</span>
+            </div>
+            <div class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Szybka diagnostyka</span>
+            </div>
+          </div>
+
+          <div class="hero-actions hero-actions-center">
+            <a class="btn btn-primary btn-glow" href="tel:+48600000000">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              Zadzwoń: 600 000 000
+            </a>
+            <a class="btn btn-ghost" href="#kalkulator">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                <line x1="8" y1="6" x2="16" y2="6"></line>
+                <line x1="16" y1="14" x2="16" y2="18"></line>
+                <path d="M16 10h.01"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M8 14h.01"></path>
+                <path d="M12 18h.01"></path>
+                <path d="M8 18h.01"></path>
+              </svg>
+              Oblicz szacowany koszt
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Framed Video Showcase Card -->
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="uslugi" class="services wrap">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Nasze Usługi</span>
+          <h2>Czym się zajmujemy?</h2>
+        </div>
+        <p class="section-note">
+          Nie wiesz dokładnie, co nawaliło w Twoim aucie? Zadzwoń i opisz objawy — resztę zdiagnozujemy na miejscu.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+              </path>
+            </svg>
+          </div>
+          <h3>Przeglądy okresowe</h3>
+          <p>Kompleksowa kontrola stanu pojazdu, filtrów i płynów przed trasą lub przed corocznym badaniem technicznym.
+          </p>
+          <ul class="service-bullets">
+            <li>Kontrola 25 kluczowych punktów</li>
+            <li>Wymiana olejów z certyfikatem</li>
+            <li>Wpis do książki serwisowej</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Diagnostyka komputerowa</h3>
+          <p>Podłączamy markowy skaner, kasujemy błędy, analizujemy parametry na żywo i wskazujemy przyczyny problemów.
+          </p>
+          <ul class="service-bullets">
+            <li>Odczyt błędów Check Engine, ABS, ESP</li>
+            <li>Parametry wtrysków i DPF/FAP</li>
+            <li>Kasowanie inspekcji olejowych</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+              <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+              <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+              <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+            </svg>
+          </div>
+          <h3>Hamulce i zawieszenie</h3>
+          <p>Wymiana klocków, tarcz, płynu hamulcowego, amortyzatorów oraz łączników stabilizatora dla maksymalnego
+            bezpieczeństwa.</p>
+          <ul class="service-bullets">
+            <li>Tarcze i klocki sprawdzonych marek</li>
+            <li>Regeneracja zacisków hamulcowych</li>
+            <li>Eliminacja stuków w zawieszeniu</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3>Wymiana oleju i płynów</h3>
+          <p>Regularna wymiana oleju silnikowego, przekładniowego oraz płynu chłodniczego i hamulcowego z markowymi
+            filtrami.</p>
+          <ul class="service-bullets">
+            <li>Oleje syntetyczne i półsyntetyczne</li>
+            <li>Filtry oleju, powietrza, paliwa i kabiny</li>
+            <li>Utylizacja zużytych płynów gratis</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v10l4.5 4.5"></path>
+              <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"></path>
+            </svg>
+          </div>
+          <h3>Serwis klimatyzacji</h3>
+          <p>Napełnianie czynnikiem R134a i R1234yf, sprawdzanie szczelności azotem oraz dokładne ozonowanie
+            odgrzybiające.</p>
+          <ul class="service-bullets">
+            <li>Uzupełnianie czynnika chłodniczego</li>
+            <li>Test szczelności układu</li>
+            <li>Ozonowanie i wymiana filtra kabiny</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 3a9 9 0 0 0 0 18"></path>
+            </svg>
+          </div>
+          <h3>Wulkanizacja & Opony</h3>
+          <p>Sezonowa przekładka kół, wymiana opon na feldze, precyzyjne wyważanie komputerowe oraz naprawa przebitych
+            opon.</p>
+          <ul class="service-bullets">
+            <li>Wymiana opon 13" - 21"</li>
+            <li>Wyważanie kół aluminiowych i stalowych</li>
+            <li>Naprawa kołkowanie po gwoździu</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section id="kalkulator" class="calculator-section">
+      <div class="wrap">
+        <div class="calc-card">
+          <div class="calc-header">
+            <span class="kicker">Szybka Wycena</span>
+            <h2>Interaktywny Kalkulator Szacunkowych Kosztów</h2>
+            <p>Wybierz interesującą Cię usługę oraz typ pojazdu, aby poznać orientacyjny koszt naprawy oraz szacowany
+              czas wykonania.</p>
+          </div>
+
+          <div class="calc-body">
+            <div class="calc-options">
+              <div class="option-group">
+                <label class="option-label">1. Wybierz usługę:</label>
+                <div class="custom-select-grid" id="serviceOptions">
+                  <button class="select-btn active" data-service="olej" data-price-base="150" data-time="45 min">
+                    <span class="btn-title">Wymiana oleju i filtrów</span>
+                    <span class="btn-sub">od 150 zł</span>
+                  </button>
+                  <button class="select-btn" data-service="klocki" data-price-base="180" data-time="1.5 godz.">
+                    <span class="btn-title">Wymiana klocków hamulcowych</span>
+                    <span class="btn-sub">od 180 zł</span>
+                  </button>
+                  <button class="select-btn" data-service="diag" data-price-base="120" data-time="30 min">
+                    <span class="btn-title">Diagnostyka komputerowa</span>
+                    <span class="btn-sub">od 120 zł</span>
+                  </button>
+                  <button class="select-btn" data-service="klima" data-price-base="200" data-time="1 godz.">
+                    <span class="btn-title">Serwis klimatyzacji + odgrzybianie</span>
+                    <span class="btn-sub">od 200 zł</span>
+                  </button>
+                  <button class="select-btn" data-service="opony" data-price-base="140" data-time="45 min">
+                    <span class="btn-title">Przekładka opon (komplet)</span>
+                    <span class="btn-sub">od 140 zł</span>
+                  </button>
+                  <button class="select-btn" data-service="zawieszenie" data-price-base="250" data-time="2 godz.">
+                    <span class="btn-title">Naprawa zawieszenia (przód/tył)</span>
+                    <span class="btn-sub">od 250 zł</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="option-group">
+                <label class="option-label">2. Typ pojazdu:</label>
+                <div class="car-type-tabs" id="carTypeOptions">
+                  <button class="tab-btn active" data-multiplier="1.0">
+                    <span>🚗 Osobowe</span>
+                  </button>
+                  <button class="tab-btn" data-multiplier="1.2">
+                    <span>SUV / 4x4</span>
+                  </button>
+                  <button class="tab-btn" data-multiplier="1.35">
+                    <span>🚐 Dostawcze</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-result-box">
+              <div class="result-badge">Wykryta wycena</div>
+              <div class="result-price-wrap">
+                <span class="price-label">Orientacyjny koszt robocizny:</span>
+                <div class="price-val" id="calcPrice">150 – 220 zł</div>
+                <span class="price-note">* Ostateczny koszt zależy od ceny użytych części</span>
+              </div>
+              <div class="result-time">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Szacowany czas: <strong id="calcTime">45 min</strong></span>
+              </div>
+              <div class="result-cta">
+                <a href="tel:+48600000000" class="btn btn-primary btn-block">
+                  Zarezerwuj termin: 600 000 000
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="dlaczego-my" class="why-us wrap">
+      <div class="section-head text-center">
+        <span class="kicker">Standardy Warsztatu</span>
+        <h2>Dlaczego kierowcy z okolicy wybierają Michał Auto Serwis?</h2>
+      </div>
+
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon">🔍</div>
+          <h3>Uczciwa wycena</h3>
+          <p>Zanim wymienimy jakąkolwiek część, dzwonimy i podajemy dokładny koszt. Żadnych przykrych niespodzianek przy
+            odbiorze auta.</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">⚡</div>
+          <h3>Szybki czas realizacji</h3>
+          <p>Większość bieżących napraw hamulców, oleju czy zawieszenia wykonujemy w ciągu tego samego dnia roboczego.
+          </p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">🛡️</div>
+          <h3>Gwarancja i jakość</h3>
+          <p>Używamy części od sprawdzonych producentów (Bosch, Brembo, Sachs, Lemförder). Na każdą wykonaną usługę
+            dajemy gwarancję.</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">🤝</div>
+          <h3>Bezpośredni kontakt z mechanikiem</h3>
+          <p>Rozmawiasz bezpośrednio z osobą, która naprawia Twoje auto. Dowiesz się dokładnie, co zostało zrobione i co
+            warto wymienić w przyszłości.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="o-mnie" class="about">
+      <div class="wrap about-inner">
+        <div class="about-image-card">
+          <img src="images/mechanic.jpg" alt="Mechanik Michał w warsztacie samochodowym" class="about-img">
+          <div class="experience-badge">
+            <span class="exp-number">15+</span>
+            <span class="exp-text">Lat doświadczenia w branży</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="kicker">O warsztacie</span>
+          <h2>Poznajmy się — Nazywam się Michał</h2>
+          <p>
+            Motoryzacja to moją pasją od ponad 15 lat. Zaczynałem od naprawiania aut u doświadczonych mistrzów branży, a
+            od kilku lat prowadzę własny niezależny warsztat.
+          </p>
+          <p>
+            Mój warsztat zlokalizowany jest w łatwo dostępnym miejscu z wygodnym podjazdem. Dysponuję podnośnikami,
+            profesjonalnym komputerem diagnostycznym oraz stacją do serwisu klimatyzacji.
+          </p>
+
+          <div class="about-features">
+            <div class="feat-item">
+              <span class="check-icon">✓</span>
+              <span>Naprawa aut wszystkich marek (VW, Audi, BMW, Ford, Opel, Toyota i inne)</span>
+            </div>
+            <div class="feat-item">
+              <span class="check-icon">✓</span>
+              <span>Dokumentacja napraw oraz możliwość wystawienia faktury VAT</span>
+            </div>
+            <div class="feat-item">
+              <span class="check-icon">✓</span>
+              <span>Samochód zastępczy na czas dłuższych napraw (po wcześniejszym uzgodnieniu)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contact & Map Section -->
+    <section id="kontakt" class="contact">
+      <div class="wrap contact-inner">
+        <div class="contact-info-block">
+          <span class="kicker">Kontakt i Dojazd</span>
+          <h2>Masz pytanie? Zadzwoń lub odwiedź warsztat</h2>
+
+          <div class="contact-cards-grid">
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <div>
+                <span class="info-title">Zadzwoń do nas</span>
+                <a href="tel:+48600000000" class="info-link">+48 600 000 000</a>
+                <span class="info-sub">Odpowiadamy od razu</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div>
+                <span class="info-title">Adres warsztatu</span>
+                <span class="info-val">ul. Polna 4, 33-100 Tarnów</span>
+                <a href="https://maps.google.com/?q=Tarnow+Polna+4" target="_blank" rel="noopener"
+                  class="info-sub-link">Otwórz w Google Maps →</a>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="hours-heading">Godziny otwarcia warsztatu</h3>
+          <table class="hours-table">
+            <tbody>
+              <tr class="active-day">
+                <th>Poniedziałek – Piątek</th>
+                <td><span class="status-green">Otwarte</span> 8:00 – 17:00</td>
+              </tr>
+              <tr>
+                <th>Sobota</th>
+                <td>8:00 – 13:00 (po rejestracji)</td>
+              </tr>
+              <tr>
+                <th>Niedziela</th>
+                <td><span class="status-red">Zamknięte</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="map-wrapper-block">
+          <div class="map-card-container">
+            <iframe title="Mapa dojazdu do Michał Auto Serwis"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2568.123!2d20.987!3d50.012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDAwJzQzLjIiTiAyMMKwNTknMTMyIkU!5e0!3m2!1spl!2spl!4v1620000000000!5m2!1spl!2spl"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-overlay-badge">
+              <strong>Michał Auto Serwis</strong>
+              <span>📍 Łatwy dojazd i wygodny parking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-col brand-col">
+        <a class="logo" href="#top">
+          <span class="logo-text">Michał <span class="accent">Auto Serwis</span></span>
+        </a>
+        <p class="footer-desc">
+          Twój zaufany lokalny warsztat samochodowy. Rzetelne naprawy, wycena przed usługą i indywidualne podejście do
+          każdego klienta.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Szybkie Linki</h4>
+        <ul>
+          <li><a href="#uslugi">Usługi</a></li>
+          <li><a href="#kalkulator">Kalkulator wyceny</a></li>
+          <li><a href="#dlaczego-my">Dlaczego my</a></li>
+          <li><a href="#o-mnie">O warsztacie</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Godziny pracy</h4>
+        <p>Poniedziałek – Piątek: 8:00 – 17:00</p>
+        <p>Sobota: 8:00 – 13:00</p>
+        <p>Niedziela: Zamknięte</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>📞 <a href="tel:+48600000000">+48 600 000 000</a></p>
+        <p>📍 ul. Polna 4, 33-100 Tarnów</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom wrap">
+      <p>© 2026 Michał Auto Serwis. Wszystkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <!-- Fixed Mobile Action Bar -->
+  <div class="mobile-action-bar">
+    <a href="tel:+48600000000" class="mobile-btn call-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+        </path>
+      </svg>
+      Zadzwoń teraz
+    </a>
+    <a href="https://maps.google.com/?q=Tarnow+Polna+4" target="_blank" rel="noopener" class="mobile-btn map-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      Nawiguj
+    </a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
