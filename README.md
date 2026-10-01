@@ -23,6 +23,4 @@ Uruchomienie
 Nie wymaga instalacji. Pobierz repozytorium i otwórz index.html w przeglądarce:
 
 bash
-git clone https://github.com/gwisniowski/MichalCarService.git
-cd MichalCarService
-Struktura projektu
+https://github.com/gwisniowski/CarService.git
